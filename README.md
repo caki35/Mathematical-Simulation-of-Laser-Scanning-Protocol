@@ -61,8 +61,11 @@ The function returns three values:
 N: The number of data points that are acquired during one scan in all scanning process.  
 Maksvalue: maximum estimating time difference (sec.)  
 Minvalue: minimum estimating time difference (sec.)  
-
-
+  
+#### References
+[1] Park, T., Jang, S., Han, M., Ryu, S. and Oh, W., 2018. Wide dynamic range high-speed three-dimensional quantitative OCT angiography with a hybrid-beam scan. Optics Letters, 43(10), p.2237.
+[2] Ju, M., Heisler, M., Athwal, A., Sarunic, M. and Jian, Y., 2018. Effective bidirectional scanning pattern for optical coherence tomography angiography. Biomedical Optics Express, 9(5), p.2336.
+[3] https://www.thorlabs.com/navigation.cfm?guide_id=2269
 
 
 
