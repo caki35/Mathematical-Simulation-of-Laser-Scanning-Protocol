@@ -7,7 +7,7 @@ Laser scanning can be controlled by galvo mirror systems and by a voltage supply
 In this repository, I shared three MATLAB functions to perform mathematical simulation of such electrical signals applied on galvo mirror systems and estimating time-intervals.
 
 ## 1. Frequency Modulation
-In this function named scannerwithfm.m, I simulate the situation in which the frequency of a sawtooth electrical signal is modulated by a modulation frequency. 
+In this function named **scannerwithfm.m**, I simulate the situation in which the frequency of a sawtooth electrical signal is modulated by a modulation frequency. 
 
 function [N,maksvalue,minvalue]=scannerwithfm(wait_duration,fc,fm,delta_f,timedifpoint,stdwm)
 
@@ -25,7 +25,7 @@ Maksvalue: maximum estimating time difference (sec.)
 Minvalue: minimum estimating time difference (sec.)
 
 ## 2. Frequency Sweep (Chirp)
-In this function named scannerchirp.m, I simulate the situation in which the frequency of a sinusoidal electrical signal is modulated by a linear sweeping(chirping).  
+In this function named **scannerchirp.m**, I simulate the situation in which the frequency of a sinusoidal electrical signal is modulated by a linear sweeping(chirping).  
 
 function [N,maksvalue,minvalue]= scannerchirp(wait_duration,fsweep,f_initial,f_final,duty_cycle_percent,timedifpoint,stdwm)
 
@@ -44,7 +44,7 @@ Maksvalue: maximum estimating time difference (sec.)
 Minvalue: minimum estimating time difference (sec.)
 
 ## 3. Sine Scan with Rump Offset
-In this function named scannernovel.m, I simulate the situation in which the frequency of a sinusoidal electrical signal with smaller amplitude is summed with a ramp electrical signal with greater amplitude. A mathematical function is derived so as summation of signals doesn't exceed Vmax and Vmin. Therefore, amplitude of the sine signal is calculated in function depending on maximum voltage and sine voltage.
+In this function named **scannernovel.m**, I simulate the situation in which the frequency of a sinusoidal electrical signal with smaller amplitude is summed with a ramp electrical signal with greater amplitude. A mathematical function is derived so as summation of signals doesn't exceed Vmax and Vmin. Therefore, amplitude of the sine signal is calculated in function depending on maximum voltage and sine voltage.
 
 function [N,maksvalue,minvalue]= scannernovel(wait_duration,fscan,freprate,small_location_derivation,higher_location_derivation,timedifpoint,stdwm)
 
