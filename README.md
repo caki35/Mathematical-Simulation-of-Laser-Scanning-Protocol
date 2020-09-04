@@ -44,7 +44,7 @@ Maksvalue: maximum estimating time difference (sec.)
 Minvalue: minimum estimating time difference (sec.)  
 
 ## 3. Sine Scan with Rump Offset
-In this function named **scannernovel.m**, I simulate the situation in which the frequency of a sinusoidal electrical signal with smaller amplitude is summed with a ramp electrical signal with greater amplitude. A mathematical function is derived so as summation of signals doesn't exceed Vmax and Vmin. Therefore, amplitude of the ramp signal is calculated in function depending on maximum voltage and amplitude of sine signal.  
+In this function named **scannernovel.m**, I simulate the situation in which the sinusoidal electrical signal with smaller amplitude is summed with a ramp electrical signal with greater amplitude. A mathematical function is derived so as summation of signals doesn't exceed Vmax and Vmin. Therefore, amplitude of the ramp signal is calculated in function depending on maximum voltage and amplitude of sine signal.  
   
 function [N,maksvalue,minvalue]= scannernovel(wait_duration,fscan,freprate,small_location_derivation,higher_location_derivation,timedifpoint,stdwm)  
   
