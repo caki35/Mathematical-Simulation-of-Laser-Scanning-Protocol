@@ -11,56 +11,56 @@ In this function named **scannerwithfm.m**, I simulate the situation in which th
 
 function [N,maksvalue,minvalue]=scannerwithfm(wait_duration,fc,fm,delta_f,timedifpoint,stdwm)
 
-Input arguments:
-wait_duration: how long scanning will continue (sec.)
-fc: central frequency of the modulated sine wave (Hz)                 
-fm: frequency of modulation (Hz)                 
-delta_f : modulation bandwidth that corresponds frequency range of modulated signal (Hz)                  
-timedifpoint: the data point at which time differences are calculated 
-stdwm = show time differences without modulation(if 1) 
-
-The function returns three value:
-N: The number of data points that are acquired during one scan in all scanning process.
-Maksvalue: maximum estimating time difference (sec.)
-Minvalue: minimum estimating time difference (sec.)
+Input arguments:  
+wait_duration: how long scanning will continue (sec.)  
+fc: central frequency of the modulated sine wave (Hz)                  
+fm: frequency of modulation (Hz)                  
+delta_f : modulation bandwidth that corresponds frequency range of modulated signal (Hz)                   
+timedifpoint: the data point at which time differences are calculated   
+stdwm = show time differences without modulation(if 1)   
+  
+The function returns three value:  
+N: The number of data points that are acquired during one scan in all scanning process.  
+Maksvalue: maximum estimating time difference (sec.)  
+Minvalue: minimum estimating time difference (sec.)  
 
 ## 2. Frequency Sweep (Chirp)
 In this function named **scannerchirp.m**, I simulate the situation in which the frequency of a sinusoidal electrical signal is modulated by a linear sweeping(chirping).  
-
-function [N,maksvalue,minvalue]= scannerchirp(wait_duration,fsweep,f_initial,f_final,duty_cycle_percent,timedifpoint,stdwm)
-
-Input arguments:
-wait_duration: how long scanning will continue (sec.)
-fsweep: frequency of original sinusoidal signal (Hz)
-f_initial: initial frequency of sweeping (Hz)
-f_final: initial frequency of sweeping (Hz)  
-duty_cycle_percent:  Duty Cycle of Scanning
-timedifpoint: the point at which time dif are calculated
-stdwm = show time differences without modulation(if 1)      
-
-The function returns three value:
-N: The number of data points that are acquired during one scan in all scanning process.
-Maksvalue: maximum estimating time difference (sec.)
-Minvalue: minimum estimating time difference (sec.)
+  
+function [N,maksvalue,minvalue]= scannerchirp(wait_duration,fsweep,f_initial,f_final,duty_cycle_percent,timedifpoint,stdwm)  
+  
+Input arguments:  
+wait_duration: how long scanning will continue (sec.)  
+fsweep: frequency of original sinusoidal signal (Hz)  
+f_initial: initial frequency of sweeping (Hz)  
+f_final: initial frequency of sweeping (Hz)    
+duty_cycle_percent:  Duty Cycle of Scanning  
+timedifpoint: the point at which time dif are calculated  
+stdwm = show time differences without modulation(if 1)        
+  
+The function returns three value:   
+N: The number of data points that are acquired during one scan in all scanning process.  
+Maksvalue: maximum estimating time difference (sec.)  
+Minvalue: minimum estimating time difference (sec.)  
 
 ## 3. Sine Scan with Rump Offset
-In this function named **scannernovel.m**, I simulate the situation in which the frequency of a sinusoidal electrical signal with smaller amplitude is summed with a ramp electrical signal with greater amplitude. A mathematical function is derived so as summation of signals doesn't exceed Vmax and Vmin. Therefore, amplitude of the sine signal is calculated in function depending on maximum voltage and sine voltage.
-
-function [N,maksvalue,minvalue]= scannernovel(wait_duration,fscan,freprate,small_location_derivation,higher_location_derivation,timedifpoint,stdwm)
-
-input arguments
-wait_duration: how long scanning will continue (sec.)       
-fscan: frequency of the sine wave (Hz)
-freprate: frequency of the ramp wave (Hz)       
-small_location_derivation = amplitude of the sine signal (V)
-higher_location_derivation = V = Vmax = -Vmin
-timedifpoint: the point at which time dif are calculated 
-stdwm = show time differences without modulation(if 1)  
-
-The function returns three value:
-N: The number of data points that are acquired during one scan in all scanning process.
-Maksvalue: maximum estimating time difference (sec.)
-Minvalue: minimum estimating time difference (sec.)
+In this function named **scannernovel.m**, I simulate the situation in which the frequency of a sinusoidal electrical signal with smaller amplitude is summed with a ramp electrical signal with greater amplitude. A mathematical function is derived so as summation of signals doesn't exceed Vmax and Vmin. Therefore, amplitude of the sine signal is calculated in function depending on maximum voltage and sine voltage.  
+  
+function [N,maksvalue,minvalue]= scannernovel(wait_duration,fscan,freprate,small_location_derivation,higher_location_derivation,timedifpoint,stdwm)  
+  
+Input arguments:   
+wait_duration: how long scanning will continue (sec.)        
+fscan: frequency of the sine wave (Hz)  
+freprate: frequency of the ramp wave (Hz)        
+small_location_derivation = amplitude of the sine signal (V)  
+higher_location_derivation = V = Vmax = -Vmin  
+timedifpoint: the point at which time dif are calculated   
+stdwm = show time differences without modulation(if 1)   
+  
+The function returns three value:  
+N: The number of data points that are acquired during one scan in all scanning process.  
+Maksvalue: maximum estimating time difference (sec.)  
+Minvalue: minimum estimating time difference (sec.)  
 
 
 
