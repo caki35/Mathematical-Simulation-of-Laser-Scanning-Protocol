@@ -4,7 +4,7 @@ function [N,maksvalue,minvalue]= scannerchirp(wait_duration,fsweep,f_initial,f_f
 %       wait_duration: how long scanning will continue              %
 %       fsweep: frequency of original signal - sine wave            %
 %       f_initial: initial frequency of sweeping                    %
-%       f_final: initial frequency of sweeping                      %
+%       f_final: final frequency of sweeping                      %
 %       duty_cycle_percent:                                         %
 %       timedifpoint: the point at which time dif are calculated    %
 %       stdwm = show time differences without modulation(if 1)      %
