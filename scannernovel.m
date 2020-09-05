@@ -9,7 +9,6 @@ function [N,maksvalue,minvalue]= scannernovel(wait_duration,fscan,freprate,small
 %       timedifpoint: the point at which time dif are calculated    %
 %       stdwm = show time differences without modulation(if 1)      %
 %-------------------------------------------------------------------%
-%------------ Sine _Scan_with_Ramp_Offset_Data-2 -------------------%
 %-------------------------------------------------------------------%
 
 fs = 40000*fscan;                                           % sampling frequency
