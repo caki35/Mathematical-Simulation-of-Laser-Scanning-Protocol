@@ -13,7 +13,7 @@ function [N,maksvalue,minvalue]=scannerwithfm(wait_duration,fc,fm,delta_f,timedi
 
 Input arguments:  
 wait_duration: how long scanning will continue (sec.)  
-fc: central frequency of the modulated sine wave (Hz)                  
+fc: central frequency of the modulated signal (Hz)                  
 fm: frequency of modulation (Hz)                  
 delta_f : modulation bandwidth that corresponds frequency range of modulated signal (Hz)                   
 timedifpoint: the data point at which time differences are calculated   
