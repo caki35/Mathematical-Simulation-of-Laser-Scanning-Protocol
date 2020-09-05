@@ -9,9 +9,8 @@ function [N,maksvalue,minvalue]= scannerchirp(wait_duration,fsweep,f_initial,f_f
 %       timedifpoint: the point at which time dif are calculated    %
 %       stdwm = show time differences without modulation(if 1)      %
 %-------------------------------------------------------------------%
-%--------------- Report file name: Chirp report --------------------%
 %-------------------------------------------------------------------%
-%% Parameters
+
 %sweep from initial frequency to finial frequency
 B=f_final-f_initial;                                        % Bandwidth
 f_center=(f_final+f_initial)/2;                             % center frequency
