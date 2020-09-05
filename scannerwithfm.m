@@ -8,7 +8,6 @@ function [N,maksvalue,minvalue]=scannerwithfm(wait_duration,fc,fm,delta_f,timedi
 %       timedifpoint: the point at which time dif are calculated    %
 %       stdwm = show time differences without modulation(if 1)      %
 %-------------------------------------------------------------------%
-%------------ Report file name: Signal_Modulation ------------------%
 %-------------------------------------------------------------------%
 
 fs = 50000*fc;                                                              % sampling frequency
