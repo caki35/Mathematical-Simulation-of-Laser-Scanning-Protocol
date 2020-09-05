@@ -33,7 +33,7 @@ Input arguments:
 wait_duration: how long scanning will continue (sec.)  
 fsweep: frequency of original sinusoidal signal (Hz)  
 f_initial: initial frequency of sweeping (Hz)  
-f_final: initial frequency of sweeping (Hz)    
+f_final: final frequency of sweeping (Hz)    
 duty_cycle_percent:  Duty Cycle of Scanning  
 timedifpoint: the point at which time dif are calculated  
 stdwm = show time differences without modulation(if 1)        
